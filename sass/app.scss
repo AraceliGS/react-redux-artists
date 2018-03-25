@@ -8,6 +8,10 @@ body {
   margin-bottom: 2em;
 }
 
+.list-group-item {
+  border: none;
+}
+
 .artist-card, .principal-artist-card {
   display: flex;
   flex-direction: column;
@@ -30,6 +34,12 @@ body {
   width: 80%;
 }
 
-.artist-image, .principal-artist-image {
+.artist-image {
   margin: 2em;  
+}
+
+.principal-artist-image {
+  margin: 2em 0;
+  max-width: 100%;
+  height: auto;
 }

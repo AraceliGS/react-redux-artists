@@ -1,14 +1,17 @@
 import React from 'react';
 
-const ArtistListItem = ({artist}) => {
+const ArtistListItem = ({name, bio, url, onClick}) => {
+  debugger;
   return (
-    <div className="artist-card">
-      <h2>{artist.name}</h2>
-      <p>{artist.bio}</p>
-      <div className="artist-image-container">
-        <img className="artist-image" src={ 'assets/images/'+ artist.url} alt={artist.name} />
+    <li className="list-group-item" onClick={onClick}>
+      <div className="artist-card">
+        <h2>{name}</h2>
+        <p>{bio}</p>
+        <div className="artist-image-container">
+          <img className="artist-image" src={ 'assets/images/'+ url} alt={name} />
+        </div>
       </div>
-    </div>
+    </li>
   )
 }
 

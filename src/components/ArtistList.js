@@ -1,11 +1,18 @@
 import React from 'react';
 import ArtistListItem from './ArtistListItem';
 
-const ArtistList = ({artists}) => {
+const ArtistList = ({artists, onArtistClick}) => {
+  debugger;
   return (
-    <div className="col-md-4">
-      {artists.map(el => <ArtistListItem artist={el}/>)}
-    </div>
+    <ul className="col-md-4">
+      {artists.map(el => 
+      <ArtistListItem 
+        key= {el.name}
+        onClick = {() => onArtistClick(el)}
+        {...el}
+      />
+    )}
+    </ul>
   )
 }
 
