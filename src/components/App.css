@@ -1,0 +1,31 @@
+body {
+  padding: 1.5em;
+  box-sizing: border-box; }
+
+.search-bar {
+  margin-left: 1.5em;
+  margin-bottom: 2em; }
+
+.artist-card, .principal-artist-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  border: 1px solid gray;
+  margin-bottom: 3em; }
+
+.artist-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.artist-image {
+  max-width: 100%;
+  height: auto;
+  width: 80%; }
+
+.artist-image, .principal-artist-image {
+  margin: 2em; }
+
+/*# sourceMappingURL=App.css.map */
